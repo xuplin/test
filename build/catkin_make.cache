@@ -1,0 +1,2 @@
+example
+-DCATKIN_DEVEL_PREFIX=/home/xuplin/test/devel -DCMAKE_INSTALL_PREFIX=/home/xuplin/test/install -G Unix Makefiles
