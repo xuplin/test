@@ -39,6 +39,8 @@
 /home/xuplin/test/build/example/CMakeFiles/install/local.dir
 /home/xuplin/test/build/example/CMakeFiles/rebuild_cache.dir
 /home/xuplin/test/build/example/CMakeFiles/test.dir
+/home/xuplin/test/build/example/CMakeFiles/C_two.dir
+/home/xuplin/test/build/example/CMakeFiles/C_one.dir
 /home/xuplin/test/build/example/CMakeFiles/list_install_components.dir
 /home/xuplin/test/build/example/CMakeFiles/roscpp_generate_messages_py.dir
 /home/xuplin/test/build/example/CMakeFiles/roscpp_generate_messages_eus.dir
