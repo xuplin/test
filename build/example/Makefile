@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+example/CMakeFiles/C_three.dir/rule:
+	cd /home/xuplin/test/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/C_three.dir/rule
+.PHONY : example/CMakeFiles/C_three.dir/rule
+
+# Convenience name for target.
+C_three: example/CMakeFiles/C_three.dir/rule
+
+.PHONY : C_three
+
+# fast build rule for target.
+C_three/fast:
+	cd /home/xuplin/test/build && $(MAKE) -f example/CMakeFiles/C_three.dir/build.make example/CMakeFiles/C_three.dir/build
+.PHONY : C_three/fast
+
+# Convenience name for target.
 example/CMakeFiles/C_two.dir/rule:
 	cd /home/xuplin/test/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/C_two.dir/rule
 .PHONY : example/CMakeFiles/C_two.dir/rule
@@ -479,6 +494,33 @@ src/C_one.cpp.s:
 	cd /home/xuplin/test/build && $(MAKE) -f example/CMakeFiles/C_one.dir/build.make example/CMakeFiles/C_one.dir/src/C_one.cpp.s
 .PHONY : src/C_one.cpp.s
 
+src/C_three.o: src/C_three.cpp.o
+
+.PHONY : src/C_three.o
+
+# target to build an object file
+src/C_three.cpp.o:
+	cd /home/xuplin/test/build && $(MAKE) -f example/CMakeFiles/C_three.dir/build.make example/CMakeFiles/C_three.dir/src/C_three.cpp.o
+.PHONY : src/C_three.cpp.o
+
+src/C_three.i: src/C_three.cpp.i
+
+.PHONY : src/C_three.i
+
+# target to preprocess a source file
+src/C_three.cpp.i:
+	cd /home/xuplin/test/build && $(MAKE) -f example/CMakeFiles/C_three.dir/build.make example/CMakeFiles/C_three.dir/src/C_three.cpp.i
+.PHONY : src/C_three.cpp.i
+
+src/C_three.s: src/C_three.cpp.s
+
+.PHONY : src/C_three.s
+
+# target to generate assembly for a file
+src/C_three.cpp.s:
+	cd /home/xuplin/test/build && $(MAKE) -f example/CMakeFiles/C_three.dir/build.make example/CMakeFiles/C_three.dir/src/C_three.cpp.s
+.PHONY : src/C_three.cpp.s
+
 src/C_two.o: src/C_two.cpp.o
 
 .PHONY : src/C_two.o
@@ -543,6 +585,7 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... C_three"
 	@echo "... C_two"
 	@echo "... C_one"
 	@echo "... list_install_components"
@@ -568,6 +611,9 @@ help:
 	@echo "... src/C_one.o"
 	@echo "... src/C_one.i"
 	@echo "... src/C_one.s"
+	@echo "... src/C_three.o"
+	@echo "... src/C_three.i"
+	@echo "... src/C_three.s"
 	@echo "... src/C_two.o"
 	@echo "... src/C_two.i"
 	@echo "... src/C_two.s"

@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named C_three
+
+# Build rule for target.
+C_three: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 C_three
+.PHONY : C_three
+
+# fast build rule for target.
+C_three/fast:
+	$(MAKE) -f example/CMakeFiles/C_three.dir/build.make example/CMakeFiles/C_three.dir/build
+.PHONY : C_three/fast
+
+#=============================================================================
 # Target rules for targets named C_two
 
 # Build rule for target.
@@ -553,6 +566,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... C_three"
 	@echo "... C_two"
 	@echo "... C_one"
 	@echo "... roscpp_generate_messages_py"
